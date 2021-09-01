@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Projects</key>
+	<array>
+		<string>Project 1</string>
+		<string>Project 2</string>
+		<string>Project 3</string>
+	</array>
+	<key>todoItems</key>
+	<array>
+		<string>Todo 1</string>
+		<string>Todo 2</string>
+		<string>Todo 3</string>
+		<string>todo 4</string>
+	</array>
+	<key>Areas</key>
+	<array>
+		<string>Quick Find</string>
+		<string>Main</string>
+		<string>Pinned</string>
+		<string>Area 1</string>
+		<string>Area 2</string>
+	</array>
+</dict>
+</plist>

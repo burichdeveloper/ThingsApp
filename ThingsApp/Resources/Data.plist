@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Areas</key>
+	<array>
+		<dict>
+			<key>areaId</key>
+			<string>quickFind</string>
+			<key>title</key>
+			<string>Quick Find</string>
+			<key>projects</key>
+			<array/>
+			<key>isOpened</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>areaId</key>
+			<string>main</string>
+			<key>title</key>
+			<string>Main</string>
+			<key>projects</key>
+			<array>
+				<string>inbox</string>
+				<string>today</string>
+				<string>upcoming</string>
+				<string>anytime</string>
+				<string>someday</string>
+				<string>logbook</string>
+			</array>
+			<key>isOpened</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>areaId</key>
+			<string>pinned</string>
+			<key>title</key>
+			<string>Pinned</string>
+			<key>projects</key>
+			<array>
+				<string>id1</string>
+				<string>id2</string>
+				<string>id3</string>
+			</array>
+			<key>isOpened</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>areaId</key>
+			<string>area1</string>
+			<key>title</key>
+			<string>Area 1</string>
+			<key>projects</key>
+			<array>
+				<string>id1</string>
+				<string>id2</string>
+				<string>id3</string>
+			</array>
+			<key>isOpened</key>
+			<false/>
+		</dict>
+	</array>
+	<key>Projects</key>
+	<array>
+		<dict>
+			<key>projectId</key>
+			<string>id1</string>
+			<key>projectName</key>
+			<string>Project 1</string>
+		</dict>
+		<dict>
+			<key>projectId</key>
+			<string>id2</string>
+			<key>projectName</key>
+			<string>project 2</string>
+		</dict>
+		<dict>
+			<key>projectId</key>
+			<string>id3</string>
+			<key>projectName</key>
+			<string>project 3</string>
+		</dict>
+		<dict>
+			<key>projectId</key>
+			<string>id4</string>
+			<key>projectName</key>
+			<string>project 4</string>
+		</dict>
+		<dict>
+			<key>projectId</key>
+			<string>id5</string>
+			<key>projectName</key>
+			<string>project 5</string>
+		</dict>
+		<dict>
+			<key>projectId</key>
+			<string>inbox</string>
+			<key>projectName</key>
+			<string>Inbox</string>
+		</dict>
+		<dict>
+			<key>projectId</key>
+			<string>today</string>
+			<key>projectName</key>
+			<string>Today</string>
+		</dict>
+		<dict>
+			<key>projectId</key>
+			<string>upcoming</string>
+			<key>projectName</key>
+			<string>Upcoming</string>
+		</dict>
+		<dict>
+			<key>projectId</key>
+			<string>anytime</string>
+			<key>projectName</key>
+			<string>Anytime</string>
+		</dict>
+		<dict>
+			<key>projectId</key>
+			<string>someday</string>
+			<key>projectName</key>
+			<string>Someday</string>
+		</dict>
+		<dict>
+			<key>projectId</key>
+			<string>logbook</string>
+			<key>projectName</key>
+			<string>Logbook</string>
+		</dict>
+	</array>
+	<key>Tags</key>
+	<array>
+		<dict>
+			<key>tagId</key>
+			<string>tagId1</string>
+			<key>tagName</key>
+			<string>tag 1</string>
+			<key>tagColor</key>
+			<string>#a2a2a2</string>
+		</dict>
+		<dict>
+			<key>tagId</key>
+			<string>tagId2</string>
+			<key>tagName</key>
+			<string>tag 2</string>
+			<key>tagColor</key>
+			<string>#a2a2a2</string>
+		</dict>
+		<dict>
+			<key>tagId</key>
+			<string>tagId3</string>
+			<key>tagName</key>
+			<string>tag 3</string>
+			<key>tagColor</key>
+			<string>#a2a2a2</string>
+		</dict>
+	</array>
+	<key>Todos</key>
+	<array/>
+</dict>
+</plist>

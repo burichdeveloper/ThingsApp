@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20F71" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Area" representedClassName=".Area" syncable="YES" codeGenerationType="class">
+        <attribute name="areaId" optional="YES" attributeType="String"/>
+        <attribute name="isOpen" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="projects" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Project" inverseName="area" inverseEntity="Project"/>
+    </entity>
+    <entity name="CheckListItem" representedClassName=".CheckListItem" syncable="YES" codeGenerationType="class">
+        <attribute name="checkListItemId" optional="YES" attributeType="String"/>
+        <attribute name="isCompleted" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="itemName" optional="YES" attributeType="String"/>
+        <attribute name="todoItemId" optional="YES" attributeType="String"/>
+        <relationship name="todoItem" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TodoItem" inverseName="checkListItems" inverseEntity="TodoItem"/>
+    </entity>
+    <entity name="Project" representedClassName=".Project" syncable="YES" codeGenerationType="class">
+        <attribute name="arrayIndex" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="projectId" optional="YES" attributeType="String"/>
+        <attribute name="projectName" optional="YES" attributeType="String"/>
+        <relationship name="area" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Area" inverseName="projects" inverseEntity="Area"/>
+        <relationship name="todoItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TodoItem" inverseName="project" inverseEntity="TodoItem"/>
+    </entity>
+    <entity name="Tag" representedClassName=".Tag" syncable="YES" codeGenerationType="class">
+        <attribute name="tagId" optional="YES" attributeType="String"/>
+        <attribute name="tagName" optional="YES" attributeType="String"/>
+        <relationship name="todoItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TodoItem" inverseName="tags" inverseEntity="TodoItem"/>
+    </entity>
+    <entity name="TodoItem" representedClassName=".TodoItem" syncable="YES" codeGenerationType="class">
+        <attribute name="arrayIndex" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="checkList" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="completed" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="createdOn" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="deadlineOn" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="isFocused" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="projectId" optional="YES" attributeType="String"/>
+        <attribute name="scheluedOn" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="tagIDList" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="todoDescription" optional="YES" attributeType="String"/>
+        <attribute name="todoId" optional="YES" attributeType="String"/>
+        <relationship name="checkListItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CheckListItem" inverseName="todoItem" inverseEntity="CheckListItem"/>
+        <relationship name="project" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Project" inverseName="todoItems" inverseEntity="Project"/>
+        <relationship name="tags" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tag" inverseName="todoItems" inverseEntity="Tag"/>
+    </entity>
+    <elements>
+        <element name="Area" positionX="-533.5537109375" positionY="-109.7451324462891" width="128" height="89"/>
+        <element name="CheckListItem" positionX="101.0615234375" positionY="-0.84710693359375" width="128" height="118"/>
+        <element name="Project" positionX="-321.319580078125" positionY="-94.73796081542969" width="128" height="104"/>
+        <element name="Tag" positionX="-424.85595703125" positionY="50.36502075195312" width="128" height="88"/>
+        <element name="TodoItem" positionX="-152.1845703125" positionY="-79.29910278320312" width="128" height="268"/>
+    </elements>
+</model>
